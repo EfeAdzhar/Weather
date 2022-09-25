@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B411177428DF595300EA6606 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411177328DF595300EA6606 /* PrivateConstants.swift */; };
+		B411177928DF5AFD00EA6606 /* DayTimeSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411177828DF5AFD00EA6606 /* DayTimeSetUp.swift */; };
+		B411177C28DF9C1A00EA6606 /* AlertsForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411177B28DF9C1A00EA6606 /* AlertsForSearch.swift */; };
+		B4BA9D4728DF3F2C007D69A5 /* CurrentWeatherDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA9D4628DF3F2C007D69A5 /* CurrentWeatherDate.swift */; };
+		B4BA9D4928DF3FC1007D69A5 /* GetWeatherURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA9D4828DF3FC1007D69A5 /* GetWeatherURL.swift */; };
+		B4BA9D4C28DF4831007D69A5 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA9D4B28DF4831007D69A5 /* Collections */; };
+		B4BA9D4E28DF4831007D69A5 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA9D4D28DF4831007D69A5 /* DequeModule */; };
+		B4BA9D5028DF4831007D69A5 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = B4BA9D4F28DF4831007D69A5 /* OrderedCollections */; };
+		B4BA9D5228DF4A91007D69A5 /* Responce.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BA9D5128DF4A91007D69A5 /* Responce.swift */; };
 		B4BF770228DE2E3C0082C77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF770128DE2E3C0082C77E /* AppDelegate.swift */; };
 		B4BF770428DE2E3C0082C77E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF770328DE2E3C0082C77E /* SceneDelegate.swift */; };
 		B4BF770628DE2E3C0082C77E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF770528DE2E3C0082C77E /* ViewController.swift */; };
@@ -16,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B411177328DF595300EA6606 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
+		B411177828DF5AFD00EA6606 /* DayTimeSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimeSetUp.swift; sourceTree = "<group>"; };
+		B411177B28DF9C1A00EA6606 /* AlertsForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsForSearch.swift; sourceTree = "<group>"; };
+		B4BA9D4628DF3F2C007D69A5 /* CurrentWeatherDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherDate.swift; sourceTree = "<group>"; };
+		B4BA9D4828DF3FC1007D69A5 /* GetWeatherURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherURL.swift; sourceTree = "<group>"; };
+		B4BA9D5128DF4A91007D69A5 /* Responce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responce.swift; sourceTree = "<group>"; };
 		B4BF76FE28DE2E3C0082C77E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BF770128DE2E3C0082C77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BF770328DE2E3C0082C77E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +46,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BA9D4C28DF4831007D69A5 /* Collections in Frameworks */,
+				B4BA9D4E28DF4831007D69A5 /* DequeModule in Frameworks */,
+				B4BA9D5028DF4831007D69A5 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B411177228DF594400EA6606 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B411177328DF595300EA6606 /* PrivateConstants.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B411177528DF5A8000EA6606 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B4BF770128DE2E3C0082C77E /* AppDelegate.swift */,
+				B4BF770328DE2E3C0082C77E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B411177728DF5AE500EA6606 /* WeatherSetUp */ = {
+			isa = PBXGroup;
+			children = (
+				B411177828DF5AFD00EA6606 /* DayTimeSetUp.swift */,
+			);
+			path = WeatherSetUp;
+			sourceTree = "<group>";
+		};
+		B411177A28DF9C0400EA6606 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				B411177B28DF9C1A00EA6606 /* AlertsForSearch.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		B4BA9D4528DF3F14007D69A5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA9D5128DF4A91007D69A5 /* Responce.swift */,
+				B4BA9D4628DF3F2C007D69A5 /* CurrentWeatherDate.swift */,
+				B4BA9D4828DF3FC1007D69A5 /* GetWeatherURL.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B4BF76F528DE2E3C0082C77E = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +117,11 @@
 		B4BF770028DE2E3C0082C77E /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				B4BF770128DE2E3C0082C77E /* AppDelegate.swift */,
-				B4BF770328DE2E3C0082C77E /* SceneDelegate.swift */,
+				B411177A28DF9C0400EA6606 /* Alerts */,
+				B411177728DF5AE500EA6606 /* WeatherSetUp */,
+				B411177528DF5A8000EA6606 /* Delegates */,
+				B411177228DF594400EA6606 /* SupportFiles */,
+				B4BA9D4528DF3F14007D69A5 /* Networking */,
 				B4BF770528DE2E3C0082C77E /* ViewController.swift */,
 				B4BF770728DE2E3C0082C77E /* Main.storyboard */,
 				B4BF770A28DE2E3F0082C77E /* Assets.xcassets */,
@@ -83,6 +147,11 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				B4BA9D4B28DF4831007D69A5 /* Collections */,
+				B4BA9D4D28DF4831007D69A5 /* DequeModule */,
+				B4BA9D4F28DF4831007D69A5 /* OrderedCollections */,
+			);
 			productName = Weather;
 			productReference = B4BF76FE28DE2E3C0082C77E /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +180,9 @@
 				Base,
 			);
 			mainGroup = B4BF76F528DE2E3C0082C77E;
+			packageReferences = (
+				B4BA9D4A28DF4831007D69A5 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = B4BF76FF28DE2E3C0082C77E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BA9D5228DF4A91007D69A5 /* Responce.swift in Sources */,
+				B4BA9D4928DF3FC1007D69A5 /* GetWeatherURL.swift in Sources */,
 				B4BF770628DE2E3C0082C77E /* ViewController.swift in Sources */,
+				B411177928DF5AFD00EA6606 /* DayTimeSetUp.swift in Sources */,
 				B4BF770228DE2E3C0082C77E /* AppDelegate.swift in Sources */,
+				B411177428DF595300EA6606 /* PrivateConstants.swift in Sources */,
+				B411177C28DF9C1A00EA6606 /* AlertsForSearch.swift in Sources */,
 				B4BF770428DE2E3C0082C77E /* SceneDelegate.swift in Sources */,
+				B4BA9D4728DF3F2C007D69A5 /* CurrentWeatherDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +436,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4BA9D4A28DF4831007D69A5 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4BA9D4B28DF4831007D69A5 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BA9D4A28DF4831007D69A5 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		B4BA9D4D28DF4831007D69A5 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BA9D4A28DF4831007D69A5 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		B4BA9D4F28DF4831007D69A5 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BA9D4A28DF4831007D69A5 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4BF76F628DE2E3C0082C77E /* Project object */;
 }

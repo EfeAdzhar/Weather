@@ -16,10 +16,11 @@ final class Responce {
         404: "Not Found",
     ]
     
-    public func responseStatus(_ status : Int) {
+    public func responseStatus(_ status : Int) -> String? {
         var iterator = response.makeIterator()
         if(iterator.next()?.key == status) {
-            print(response[status] ?? "ERROR")
+            return response[status]
         }
+        return nil
     }
 }
