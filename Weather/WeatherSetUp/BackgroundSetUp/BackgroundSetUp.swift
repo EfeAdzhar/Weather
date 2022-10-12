@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class DayTimeSetUp {
+final class BackgroundSetUp {
     
     private final let backgroundView : UIImageView
     
@@ -19,14 +19,11 @@ final class DayTimeSetUp {
     public final func dayTime(_ time : String) {
         
         let seperatingDateAndTime = time.split(separator: ",")
-        print(seperatingDateAndTime)
         let firstCharInTime = seperatingDateAndTime[1].split(separator: ":")
         let splitFirstCharInTime = firstCharInTime[0].split(separator: " ").joined()
         let time = Int(splitFirstCharInTime)
        
         if let time = time {
-            print(time)
-            
             if(time < 00 && time >= 03) {
                 print("it is night")
                 backgroundView.image = UIImage(named: "night")

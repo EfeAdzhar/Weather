@@ -6,7 +6,8 @@
 //
 
 import Foundation
-class PrivateConstants {
+
+final class PrivateConstants {
     private final let apiKey : String = "a64084bfe56d5150982f355011b35dd0"
     
     public func getAPIKey() -> String {

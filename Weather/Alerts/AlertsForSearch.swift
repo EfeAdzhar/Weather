@@ -8,31 +8,23 @@
 import Foundation
 import UIKit
 
-class AlertsForSearch {
-    private final let nameOfACity: UILabel
-    private final let temperature: UILabel
-    private final let date : UILabel
-    private final let backgroundView : UIImageView
-    
-    init(_ nameOfACity : UILabel, _ temperature: UILabel, _ date : UILabel, _ backgroundView : UIImageView) {
-        self.nameOfACity = nameOfACity
-        self.temperature = temperature
-        self.date = date
-        self.backgroundView = backgroundView
-    }
+final class AlertsForSearch {
     
     public func alertControllerForSearcher(_ rootVC : UIViewController, _ title : String, _ message : String, _ preferredStyle : UIAlertController.Style) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
         
-        let actionSearch = UIAlertAction(title: "Search", style: .default) { [self] _ in
+        let actionSearch = UIAlertAction(title: "Search", style: .default) { _ in
             
             let textField = alert.textFields?.first
             guard let cityName = textField?.text else {return}
             
-            if(cityName != "") {
+            if (cityName != "") {
                 let city = cityName.split(separator: " ").joined(separator: "%20")
-                GetWeatherURL(city: city).fetchCurrentWeather(nameOfACity, temperature, date, backgroundView)
+                let weatherViewController = WeatherViewController(city: city)
+                let url = weatherViewController.getURL()
+                weatherViewController.getDelegate().fetchURL(url: url!)
+             // OpenWeatherURLService(city: city).fetchCurrentWeather(nameOfACity)
             }
         }
         
